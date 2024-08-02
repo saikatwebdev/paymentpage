@@ -1,0 +1,201 @@
+body {
+    background: black;  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: aqua;
+    font-family: "poppins" , sans-serif;
+}
+form {
+    display: flex;
+    outline: none;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    height: 60px;
+}
+.header {
+    font-size: larger;
+    transition-duration: 2s;
+}
+.header:hover {
+    font-size: 23px;
+    color: pink;
+}
+.wrapper    {
+    margin: 10px 10px 20px 10px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    background: transparent;
+}
+.wrapper .input-box {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(26, 184, 196, 0.863);
+    background: transparent;
+    font-weight: 300;
+    color: white;
+    transition-duration: .5s;
+    z-index: 0;
+}
+.wrapper .input-box:hover {
+    transform: scale(1.1);
+}
+.expire .input-box {
+    color: grey;
+}
+
+.submit {
+ 
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background: aqua;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color:red;
+    transform: rotateX(360deg);
+}
+.submit:active {
+    background-color: orangered;
+}
+.formspace {
+    transition-duration: 1s;
+    display: flex;
+    align-content: flex-end;
+    z-index: 1;
+}
+.formspace:hover {
+    transform: translateY(-70%);
+      
+}
+
+
+
+.bubble-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: rgba(18, 136, 101, 0.6);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: rise 10s infinite ease-in;
+
+}
+
+.bubble:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    left: 20%;
+    background-color: red;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    left: 40%;
+    background-color: blue;
+    animation-duration: 14s;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 60%;
+    background-color: yellowgreen;
+    animation-duration: 16s;
+    animation-delay: 6s;
+}
+
+.bubble:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 80%;
+    background-color: blueviolet;
+    animation-duration: 18s;
+    animation-delay: 8s;
+}
+
+.bubble:nth-child(6) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    background-color: aqua;
+    animation-duration: 20s;
+    animation-delay: 10s;
+}
+
+.bubble:nth-child(7) {
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    background-color: yellow;
+    animation-duration: 22s;
+    animation-delay: 12s;
+}
+
+.bubble:nth-child(8) {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    background-color: chartreuse;
+    animation-duration: 24s;
+    animation-delay: 14s;
+}
+
+.bubble:nth-child(9) {
+    width: 50px;
+    height: 50px;
+    left: 70%;
+    background-color: gold;
+    animation-duration: 26s;
+    animation-delay: 16s;
+}
+
+.bubble:nth-child(10) {
+    width: 70px;
+    height: 70px;
+    left: 90%;
+    background-color: chocolate;
+    animation-duration: 28s;
+    animation-delay: 18s;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-1200px);
+        opacity:0.3 ;
+    }
+}
